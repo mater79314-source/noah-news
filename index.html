@@ -3,50 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>磐石早報 — 房市 ∕ 國際 ∕ 地緣</title>
+  <title>磐石週報 — 房市 ∕ 國際 ∕ 地緣</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --paper: #faf7f1;
+      --paper-warm: #f3ede1;
+      --ink: #2a2622;
+      --ink-mute: #6b6259;
+      --ink-light: #9b9286;
+      --rule: #d9d1c3;
+      --rule-soft: #ebe5d8;
+      --accent: #5c4a35;
+      --serif: "Noto Serif TC", "Source Han Serif TC", serif;
+      --sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      --mono: "Inter", "SF Mono", monospace;
+      --c-policy: #8b2b2b;
+      --c-market: #2d5f3f;
+      --c-global_econ: #1f4e5f;
+      --c-geopolitics: #5c2f4a;
+    }
     * { box-sizing: border-box; }
-    body { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; max-width: 720px; margin: 30px auto; padding: 0 25px; color: #222; line-height: 1.7; background: #fafafa; }
-    .header { border-bottom: 4px solid #333; padding-bottom: 15px; margin-bottom: 25px; }
-    h1 { margin: 0; font-size: 30px; color: #1a1a1a; }
-    .subtitle { color: #666; font-size: 15px; margin-top: 6px; }
-    .intro { background: #fff; border-radius: 6px; padding: 14px 20px; margin-bottom: 30px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); font-size: 14px; color: #444; }
-    .intro strong { color: #1a1a1a; }
-    h2 { font-size: 20px; margin: 25px 0 12px; color: #333; }
+    body { font-family: var(--sans); background: var(--paper); color: var(--ink); line-height: 1.75; margin: 0; padding: 0; -webkit-font-smoothing: antialiased; font-weight: 400; }
+
+    .wrap { max-width: 720px; margin: 0 auto; padding: 60px 32px 80px; }
+    .masthead { border-top: 3px double var(--ink); border-bottom: 1px solid var(--ink); padding: 24px 0 22px; margin-bottom: 40px; }
+    .masthead-top { display: flex; justify-content: space-between; align-items: baseline; font-family: var(--mono); font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 16px; }
+    .masthead h1 { font-family: var(--serif); font-weight: 700; font-size: 64px; letter-spacing: 0.05em; line-height: 1; margin: 0 0 14px; color: var(--ink); }
+    .masthead-sub { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 17px; color: var(--ink-mute); letter-spacing: 0.02em; }
+    .intro { background: var(--paper-warm); padding: 28px 30px; margin-bottom: 50px; border-left: 3px solid var(--accent); }
+    .intro-line { display: flex; gap: 12px; margin-bottom: 12px; font-size: 14px; line-height: 1.8; color: var(--ink-mute); }
+    .intro-line:last-child { margin-bottom: 0; }
+    .intro-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; color: var(--accent); flex-shrink: 0; width: 72px; padding-top: 4px; }
+    .intro-text strong { color: var(--ink); font-weight: 500; font-family: var(--serif); }
+    .archive-head { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid var(--ink); padding-bottom: 14px; margin-bottom: 16px; }
+    .archive-title { font-family: var(--serif); font-weight: 700; font-size: 24px; margin: 0; }
+    .archive-count { font-family: var(--mono); font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-light); }
     ul { list-style: none; padding: 0; margin: 0; }
-    li a { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; margin-bottom: 8px; background: #fff; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); color: #1a4d8c; text-decoration: none; transition: transform 0.15s; }
-    li a:hover { transform: translateX(3px); }
-    .badge { display: inline-block; background: #e74c3c; color: white; font-size: 11px; padding: 2px 8px; border-radius: 10px; margin-left: 8px; font-weight: bold; }
-    .dow { color: #888; font-size: 13px; }
-    .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; color: #999; font-size: 12px; text-align: center; }
+    .issue-item a { display: flex; justify-content: space-between; align-items: center; padding: 22px 4px; border-bottom: 1px solid var(--rule-soft); color: var(--ink); text-decoration: none; transition: background 0.2s, padding-left 0.2s; }
+    .issue-item a:hover { background: var(--paper-warm); padding-left: 14px; padding-right: 14px; }
+    .issue-left { display: flex; align-items: baseline; gap: 18px; }
+    .issue-vol { font-family: var(--mono); font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-light); font-weight: 500; }
+    .issue-date { font-family: var(--serif); font-weight: 700; font-size: 20px; color: var(--ink); }
+    .issue-dow { font-weight: 500; color: var(--ink-mute); font-size: 14px; margin-left: 6px; }
+    .issue-badge { font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em; padding: 4px 10px; border: 1px solid var(--c-policy); color: var(--c-policy); text-transform: uppercase; font-weight: 600; }
+    .issue-arrow { font-family: var(--mono); font-size: 18px; color: var(--ink-light); transition: transform 0.2s; }
+    .issue-item a:hover .issue-arrow { transform: translateX(4px); color: var(--ink); }
+    .colophon { margin-top: 80px; padding-top: 30px; border-top: 1px solid var(--rule); font-family: var(--mono); font-size: 11px; letter-spacing: 0.05em; color: var(--ink-light); text-align: center; line-height: 1.9; }
+    .colophon-mark { font-family: var(--serif); font-weight: 700; font-size: 14px; color: var(--ink-mute); letter-spacing: 0.25em; margin-bottom: 12px; }
+    @media (max-width: 640px) {
+      .wrap { padding: 30px 20px 60px; }
+      .masthead h1 { font-size: 44px; }
+      .masthead-top { flex-direction: column; gap: 6px; align-items: flex-start; }
+      .intro { padding: 20px 22px; }
+      .intro-line { flex-direction: column; gap: 4px; }
+      .intro-label { width: auto; padding-top: 0; }
+      .issue-date { font-size: 17px; }
+    }
   </style>
 </head>
 <body>
-  <div class="header">
-    <h1>🪨 磐石早報</h1>
-    <div class="subtitle">房市政策 ∕ 國際財經 ∕ 地緣戰爭　・　太平洋磐石團隊｜李天璽　・　每週二、週五更新</div>
-  </div>
-  <div class="intro">
-    📌 <strong>資料來源</strong>：Google News（央行 / 通膨 / 戰爭 / 川普關稅 / 台海等多組關鍵字）、自由財經、自由國際<br>
-    📌 <strong>分類順序</strong>：政策 → 市場行情 → 國際財經 → 地緣戰爭<br>
-    📌 <strong>新鮮度保證</strong>：所有新聞 ≤ 14 天，由 RSS 抓取後程式硬過濾，無人工選文<br>
-    📌 <strong>客戶話術</strong>：每則新聞底下可點開「買方觀點 / 賣方觀點」，由 AI 從房仲對客戶話術角度自動產出
-  </div>
-  <h2>📅 歷史報告</h2>
-  <ul>
-      <li>
+  <div class="wrap">
+    <header class="masthead">
+      <div class="masthead-top">
+        <span>太平洋磐石團隊　·　李天璽</span>
+        <span>Rock Weekly</span>
+      </div>
+      <h1>磐石週報</h1>
+      <div class="masthead-sub">房市政策　∕　國際財經　∕　地緣戰爭　・　每週二、五更新</div>
+    </header>
+    <div class="intro">
+      <div class="intro-line">
+        <div class="intro-label">Sources</div>
+        <div class="intro-text">Google News（央行 / 通膨 / 戰爭 / 川普關稅 / 台海等多組關鍵字）、自由財經、自由國際</div>
+      </div>
+      <div class="intro-line">
+        <div class="intro-label">Order</div>
+        <div class="intro-text">政策 → 市場行情 → 國際財經 → 地緣戰爭</div>
+      </div>
+      <div class="intro-line">
+        <div class="intro-label">Freshness</div>
+        <div class="intro-text">所有新聞 <strong>≤ 14 天</strong>，由 RSS 抓取後程式硬過濾，無人工選文</div>
+      </div>
+      <div class="intro-line">
+        <div class="intro-label">話術</div>
+        <div class="intro-text">每則新聞底下可點開<strong>「買方觀點 / 賣方觀點」</strong>，由 AI 從房仲對客戶話術角度自動產出</div>
+      </div>
+    </div>
+    <div class="archive-head">
+      <h2 class="archive-title">Archive</h2>
+      <span class="archive-count">1 ISSUES</span>
+    </div>
+    <ul>
+      <li class="issue-item">
         <a href="2026-05-24.html">
-          <div>
-            <span>2026/05/24 磐石早報</span>
-            <span class="badge">最新</span>
+          <div class="issue-left">
+            <div class="issue-vol">Vol. 01</div>
+            <div class="issue-date">2026/05/24<span class="issue-dow"> 週日</span></div>
           </div>
-          <span class="dow">週日</span>
+          <span class="issue-badge">LATEST</span>
         </a>
       </li>
-  </ul>
-  <div class="footer">
-    © 2026 太平洋磐石團隊｜李天璽　／　由 SKY AGENT「開會新聞」Skill 自動產製<br>
-    資料僅供內部參考，實際數據請以官方公告為準
+    </ul>
+    <footer class="colophon">
+      <div class="colophon-mark">磐石週報 · ROCK WEEKLY</div>
+      © 2026 太平洋磐石團隊｜李天璽<br>
+      由 SKY AGENT「開會新聞」Skill 自動產製　／　資料僅供內部參考，實際數據請以官方公告為準
+    </footer>
   </div>
 </body>
 </html>
