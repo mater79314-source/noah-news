@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-29 磐石週報 — 房市 ∕ 國際 ∕ 地緣</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #faf7f1;
+      --paper-warm: #f3ede1;
+      --ink: #2a2622;
+      --ink-mute: #6b6259;
+      --ink-light: #9b9286;
+      --rule: #d9d1c3;
+      --rule-soft: #ebe5d8;
+      --accent: #5c4a35;
+      --serif: "Noto Serif TC", "Source Han Serif TC", serif;
+      --sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      --mono: "Inter", "SF Mono", monospace;
+      --c-policy: #8b2b2b;
+      --c-market: #2d5f3f;
+      --c-global_econ: #1f4e5f;
+      --c-geopolitics: #5c2f4a;
+    }
+    * { box-sizing: border-box; }
+    body { font-family: var(--sans); background: var(--paper); color: var(--ink); line-height: 1.75; margin: 0; padding: 0; -webkit-font-smoothing: antialiased; font-weight: 400; }
+
+    .wrap { max-width: 880px; margin: 0 auto; padding: 50px 32px 80px; }
+    .back-link { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; color: var(--ink-mute); text-decoration: none; text-transform: uppercase; display: inline-block; margin-bottom: 40px; transition: color 0.2s; }
+    .back-link:hover { color: var(--ink); }
+    .masthead { border-top: 3px double var(--ink); border-bottom: 1px solid var(--ink); padding: 22px 0 18px; margin-bottom: 30px; }
+    .masthead-top { display: flex; justify-content: space-between; align-items: baseline; font-family: var(--mono); font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 14px; }
+    .masthead h1 { font-family: var(--serif); font-weight: 700; font-size: 56px; letter-spacing: 0.05em; line-height: 1; margin: 0 0 12px; color: var(--ink); }
+    .masthead-sub { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 16px; color: var(--ink-mute); letter-spacing: 0.02em; }
+    .meta-bar { display: flex; flex-wrap: wrap; gap: 0; font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-mute); margin: 18px 0 0; padding-top: 14px; border-top: 1px solid var(--rule-soft); }
+    .meta-bar > span { padding-right: 18px; margin-right: 18px; border-right: 1px solid var(--rule-soft); }
+    .meta-bar > span:last-child { border-right: none; padding-right: 0; margin-right: 0; }
+    .freshness { background: var(--paper-warm); border-left: 3px solid var(--accent); padding: 18px 22px; margin: 30px 0 50px; font-size: 13.5px; line-height: 1.85; color: var(--ink-mute); }
+    .freshness strong { color: var(--ink); font-weight: 500; font-family: var(--serif); }
+    .section { margin-bottom: 60px; }
+    .section-head { display: flex; align-items: flex-end; gap: 24px; padding-bottom: 18px; border-bottom: 2px solid var(--ink); margin-bottom: 8px; }
+    .section-numeral { font-family: var(--serif); font-weight: 700; font-size: 64px; line-height: 0.9; color: var(--ink); flex-shrink: 0; min-width: 70px; }
+    .section-title-wrap { flex: 1; padding-bottom: 6px; }
+    .section-eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 6px; }
+    .section-title { font-family: var(--serif); font-weight: 700; font-size: 28px; line-height: 1.2; margin: 0; letter-spacing: 0.02em; }
+    .section-policy .section-title, .section-policy .section-numeral { color: var(--c-policy); }
+    .section-market .section-title, .section-market .section-numeral { color: var(--c-market); }
+    .section-global_econ .section-title, .section-global_econ .section-numeral { color: var(--c-global_econ); }
+    .section-geopolitics .section-title, .section-geopolitics .section-numeral { color: var(--c-geopolitics); }
+    .section-policy .section-head { border-bottom-color: var(--c-policy); }
+    .section-market .section-head { border-bottom-color: var(--c-market); }
+    .section-global_econ .section-head { border-bottom-color: var(--c-global_econ); }
+    .section-geopolitics .section-head { border-bottom-color: var(--c-geopolitics); }
+    .section-body { padding-top: 8px; }
+    .news-item { display: flex; gap: 22px; padding: 26px 0; border-bottom: 1px solid var(--rule-soft); }
+    .news-item:last-child { border-bottom: none; }
+    .news-num { font-family: var(--mono); font-size: 13px; font-weight: 500; color: var(--ink-light); letter-spacing: 0.05em; padding-top: 6px; flex-shrink: 0; width: 28px; }
+    .news-content { flex: 1; min-width: 0; }
+    .news-kicker { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 8px; }
+    .kicker-source { color: var(--ink-mute); font-weight: 500; }
+    .kicker-sep { margin: 0 8px; color: var(--rule); }
+    .news-title { font-family: var(--serif); font-weight: 700; font-size: 20px; line-height: 1.45; margin: 0 0 10px; letter-spacing: 0.01em; }
+    .news-title a { color: var(--ink); text-decoration: none; background-image: linear-gradient(var(--ink), var(--ink)); background-size: 0 1px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size 0.3s; }
+    .news-title a:hover { background-size: 100% 1px; }
+    .news-desc { font-size: 14.5px; line-height: 1.8; color: var(--ink-mute); margin: 0 0 14px; }
+    .perspectives { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+    .perspectives button { font-family: var(--sans); font-size: 12px; font-weight: 500; letter-spacing: 0.08em; padding: 7px 16px 7px 14px; border-radius: 0; border: 1px solid; cursor: pointer; background: transparent; transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px; }
+    .perspectives .dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; }
+    .btn-buyer { color: var(--c-market); border-color: var(--c-market); }
+    .btn-buyer .dot { background: var(--c-market); }
+    .btn-buyer:hover, .btn-buyer.active { background: var(--c-market); color: var(--paper); }
+    .btn-buyer:hover .dot, .btn-buyer.active .dot { background: var(--paper); }
+    .btn-seller { color: var(--c-policy); border-color: var(--c-policy); }
+    .btn-seller .dot { background: var(--c-policy); }
+    .btn-seller:hover, .btn-seller.active { background: var(--c-policy); color: var(--paper); }
+    .btn-seller:hover .dot, .btn-seller.active .dot { background: var(--paper); }
+    .perspective-content { margin-top: 14px; padding: 18px 22px; font-family: var(--serif); font-size: 15px; line-height: 1.9; position: relative; animation: fadein 0.25s ease-out; background: var(--paper-warm); }
+    .perspective-content.buyer { border-left: 3px solid var(--c-market); }
+    .perspective-content.seller { border-left: 3px solid var(--c-policy); }
+    .perspective-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 8px; font-weight: 600; }
+    .perspective-content.buyer .perspective-label { color: var(--c-market); }
+    .perspective-content.seller .perspective-label { color: var(--c-policy); }
+    .perspective-body { color: var(--ink); font-style: italic; }
+    @keyframes fadein { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+    .colophon { margin-top: 80px; padding-top: 30px; border-top: 1px solid var(--rule); font-family: var(--mono); font-size: 11px; letter-spacing: 0.05em; color: var(--ink-light); text-align: center; line-height: 1.9; }
+    .colophon-mark { font-family: var(--serif); font-weight: 700; font-size: 14px; color: var(--ink-mute); letter-spacing: 0.25em; margin-bottom: 12px; }
+    @media (max-width: 640px) {
+      .wrap { padding: 30px 20px 60px; }
+      .masthead h1 { font-size: 38px; }
+      .masthead-top { flex-direction: column; gap: 6px; align-items: flex-start; }
+      .section-head { gap: 14px; }
+      .section-numeral { font-size: 44px; min-width: 42px; }
+      .section-title { font-size: 22px; }
+      .news-item { gap: 14px; padding: 22px 0; }
+      .news-num { width: 22px; font-size: 11px; }
+      .news-title { font-size: 17px; }
+      .meta-bar { font-size: 10px; }
+      .meta-bar > span { padding-right: 10px; margin-right: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back-link" href="index.html">← Back to issues</a>
+    <header class="masthead">
+      <div class="masthead-top">
+        <span>Vol.&nbsp;2026-05-29</span>
+        <span>太平洋磐石團隊　·　李天璽</span>
+      </div>
+      <h1>磐石週報</h1>
+      <div class="masthead-sub">房市政策　∕　國際財經　∕　地緣戰爭　・　每週二、五更新</div>
+      <div class="meta-bar">
+        <span>35 stories</span>
+        <span>2026-05-25 – 2026-05-29</span>
+        <span>35 買賣觀點</span>
+        <span>Scope · 全台灣</span>
+      </div>
+    </header>
+    <div class="freshness">
+      本期所有新聞發布日期落在 <strong>2026-05-25 ～ 2026-05-29</strong> 之間，由 RSS 抓取後程式碼層級硬過濾（≤ 14 天），無人工選文。每則新聞底下可點開「買方觀點 / 賣方觀點」，由 AI 從房仲對客戶話術角度自動產出。
+    </div>
+
+      <section class="section section-policy">
+        <header class="section-head">
+          <div class="section-numeral">I</div>
+          <div class="section-title-wrap">
+            <div class="section-eyebrow">本期共 5 則</div>
+            <h2 class="section-title">政策／房市監管</h2>
+          </div>
+        </header>
+        <div class="section-body">
+          <article class="news-item">
+            <div class="news-num">01</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-26</span><span class="kicker-sep">/</span><span class="kicker-ago">2 天前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE96cHZ2ZlpwSDFSajhKN0VmN3dQZ1loNzllcDhvUkRlekh4dkpJQVIzYmhQbVhWRF83U3RER3V3TVFSUndQQVpwdVd4ZUhKdGZicmc2d2JtVzc?oc=5" target="_blank" rel="noopener">合庫銀前4月新增房貸年減45％ 彰銀：下半年房市量縮整理 - 自由時報</a></h3>
+              <p class="news-desc">合庫銀前4月新增房貸年減45％ 彰銀：下半年房市量縮整理 自由時報</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">銀行放款變嚴，直接幫您過濾掉一堆投資客，現在看房完全不用跟人搶！屋主等不到資金寬鬆的買方，急著變現的意願大增，這是我們爭取低價入手的絕佳空窗期。結論：現在是買方市場，您看中哪一間，我直接幫您去跟屋主砍價！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">銀行放貸額度砍半，買方現在連自備款都要湊很久，買氣真的腰斬了。如果我們不主動降價配合買方的貸款額度，這房子恐怕會卡在手上賣不掉。結論：與其等下半年市場更縮水，不如現在調降開價，這週就幫您鎖定買方！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">02</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-26</span><span class="kicker-sep">/</span><span class="kicker-ago">3 天前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE5paUhwRUlXWWVXeU80YzhTbDZXMzFTbDl2ajM5R1N1TmJuekhCOHFod0V0RHV3VUVkNkpYa1luQ1I4SHBUa08xeWhZQjNQelB3djBGbkpB?oc=5" target="_blank" rel="noopener">銀行不動產貸款占比探低4月降至35.42% 低於央行信用管制前水準| 經濟日報 - LINE TODAY</a></h3>
+              <p class="news-desc">銀行不動產貸款占比探低4月降至35.42% 低於央行信用管制前水準| 經濟日報 LINE TODAY</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">銀行現在手頭資金充沛，對自住客的貸款審核反而變得更友善、成數更好談。趁這波信用管制成效顯現，屋主姿態放軟，我們正好可以用優勢貸款條件買下好房子。結論：現在銀行額度最寬鬆，我幫您挑一間，這週就去爭取最漂亮的房貸與房價！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">數據顯示資金已經被抽離房市，買方的購買力大不如前，根本無力負擔高開價。如果我們還堅持以前的行情，只會面臨完全沒有買方詢問的窘境。結論：市場資金收緊是事實，我們主動調降開價，才能在第一時間搶下僅存的精準買方！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">03</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-25</span><span class="kicker-sep">/</span><span class="kicker-ago">3 天前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1UQjBoaDFVdXBvSXNaSkxrbUVCN0xuSVNYdUtlZjZZUnp1UDN2Y3hndGMxeTNzVzE0SEt0VXpkSUlQeFBJWTYwOGtFbHdHUW1sY2dIOEZvVmd0ckFMRXF3?oc=5" target="_blank" rel="noopener">4月房貸餘額年增率小幅上揚央行：房市仍維持軟著陸基調- 房市 - 工商時報</a></h3>
+              <p class="news-desc">4月房貸餘額年增率小幅上揚央行：房市仍維持軟著陸基調- 房市 工商時報</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">房貸餘額微增，代表剛性需求依然強勁，房價根本跌不下去。趁現在央行還在壓制市場、大家還在猶豫時進場，才是最聰明的做法。等以後管制一鬆就搶不到了。今天就跟我去現場看房，早買早享受！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">屋主大哥，雖然房貸餘額微增，但央行控管房市的態度非常明確，買方的觀望期會拉得更長。現在只要有誠意買方出價，我們就該好好把握。千萬別因為堅持幾十萬而錯失整筆交易，今天就讓我幫你談！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">04</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-25</span><span class="kicker-sep">/</span><span class="kicker-ago">3 天前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE13Mnd4Wm1ZWjJ4bGdhYlNOQjZ6TVNqMlMtVEc4Q21zNXRWX0Y4SkpHX1RJWlUzN3FOTFhNRjU4b2JkMkx2VmJSMHlCSHFXZFNyYVZjY0p3?oc=5" target="_blank" rel="noopener">房市信用管制有機會鬆綁？專家：關鍵仍在兩大指標 | 中央廣播電臺 - LINE TODAY</a></h3>
+              <p class="news-desc">房市信用管制有機會鬆綁？專家：關鍵仍在兩大指標 | 中央廣播電臺 LINE TODAY</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">信用管制不鬆綁，對我們手上有首購優勢的買方來說，簡直是完美的進場時機！現在沒人跟你搶，屋主也因為政策壓力比較願意讓利。趁現在競爭最少的時候切入，我一定幫你談個好價錢，今天就約看房！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">屋主大哥，信用管制是鐵了心不放水了，這會直接卡死九成買方的貸款，大家現在都不敢追價。我們要是繼續硬撐著不降，等後面庫存變多就更難賣了。建議我們這週把開價下修，先求成交落袋為安！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">05</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-25</span><span class="kicker-sep">/</span><span class="kicker-ago">4 天前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPbzhFaDRDTnRxRFlFWDYxNlUxdENRekt4SkxObUpnUmZyLTZuLWx4cVFUNl9JZ2IxekxPQUlRYjhvbW9PSldnSkt4YmhKUzdxMTB5RlZXSFBaaEFmeXNjT2ZEbENNMXE2QTJQU0lXcUttWFJGejJCUDN2WVVIR2E1SkdtMGxFcnfSAWJBVV95cUxOUUZYcWwwRktobVdORWVqQk1Pby1tcngzOVdsSnYxTUQ4Ri1jRndqNnc0emdTZXJBa0p5QnRIYTlXU1JrTWtQMmo4STZkdWpMSlYzQmd0ZTJsTXdabVpBSDNmdw?oc=5" target="_blank" rel="noopener">央行再鬆綁信用管制？ 劉佩真：兩大指標未達標恐難行 - udn房地產</a></h3>
+              <p class="news-desc">央行再鬆綁信用管制？ 劉佩真：兩大指標未達標恐難行 udn房地產</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">央行信用管制不鬆綁，這對我們自住客是天大的好消息！這代表投機客退場，市場上只剩我們這種真心要買的。現在屋主心態開始動搖，這就是我們大膽進場議價、撿便宜的黃金時刻。現在就是進場大膽開價的黃金期，看中哪間我幫您去砍價！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">央行管制完全沒有放鬆的跡象，買方的貸款成數被卡得死死的，自備款不夠根本買不起。如果我們不趁現在適度讓利，等後面買方被洗光，房子只會越放越難賣。建議我們趕快調整開價，趁現在還有買方時獲利出場！</div></div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section section-market">
+        <header class="section-head">
+          <div class="section-numeral">II</div>
+          <div class="section-title-wrap">
+            <div class="section-eyebrow">本期共 10 則</div>
+            <h2 class="section-title">市場行情</h2>
+          </div>
+        </header>
+        <div class="section-body">
+          <article class="news-item">
+            <div class="news-num">01</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-28</span><span class="kicker-sep">/</span><span class="kicker-ago">10 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE00NE9HbDZPb28ybEpGWGtiNEdUb25mT3plZVdvRHNWdW9GbHZaWGtDVEM3OFRvV2hlYU9NRzRvUmtTZ0xWV0I3UEhoUHJ4aDB5LTBzanVaYVk0QQ?oc=5" target="_blank" rel="noopener">房市預售冰凍量縮3成 獨居小宅成購屋新寵 - 卡優新聞網</a></h3>
+              <p class="news-desc">房市預售冰凍量縮3成 獨居小宅成購屋新寵 卡優新聞網</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">預售市場降溫、交易量縮，這正是買方市場來臨的黃金訊號！現在屋主態度明顯軟化，議價空間比以前大太多了，是極為難得的撿便宜時機。大哥，趁現在市場冷靜、沒人跟您搶，我們趕快進場挑好房，我絕對幫您談到一個驚喜的讓利價！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">大哥，現在預售市場量縮了三成，代表整體買氣急凍，買方觀望心態非常重。而且現在市場主流轉向小坪數，我們的物件必須在價格上更有競爭力才能吸引買方。建議我們趁現在市場還沒完全冷透，適度修正開價，搶先在競爭對手前獲利出場！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">02</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-28</span><span class="kicker-sep">/</span><span class="kicker-ago">16 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNQk9lRWp5MVBJMUlQSG5nRElEX05sWi02ZV9rcXZEaUgtRlhfREYydTFneHlOeEd1cGEzbURlRG1uMDJTdEJ6bWVCT1FlMDY1UVVoMXRzRlRSZGlYNGxIemZ1Qy1pU18tRjMwR3k5dDF1RkVjWkNnWGVRSWRMdTdCdk1IRzhoVjJFc2NoMVlvUEc3Q3g3dkRQZllR?oc=5" target="_blank" rel="noopener">營建成本齊揚又逢預售市場買氣轉淡！成本難轉嫁考驗建商經營韌性 - 富比士地產王</a></h3>
+              <p class="news-desc">營建成本齊揚又逢預售市場買氣轉淡！成本難轉嫁考驗建商經營韌性 富比士地產王</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">建商營建成本高漲又面臨買氣轉淡，未來新屋供給只會變少、變貴。這時候買優質中古屋最劃算，既沒有建商倒閉爛尾的風險，價格又比新案親民許多。大哥，趁現在市場選擇還多、屋主好談，趕快挑一間精華區的成屋鎖定價值，我陪您這週末去現場看！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">大哥，連建商都因為成本高、買氣差而陷入苦撐，這代表整體房市的資金鏈和信心都在緊縮。買方現在看屋都是抱著「撿便宜」的心態，開價過高完全不會有電話。建議我們認清市場現實，適度下修開價，趕在市場更冷之前順利獲利了結！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">03</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-28</span><span class="kicker-sep">/</span><span class="kicker-ago">20 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxQZFpiTHpzbjlDYlZMUW9jT0o5MmhscHdFaTlVZ0xSMExHdDJmOXNWd2JhTUlyNnhTc1ZTQWNmd09Md0ljWGp4aXNtLUN1ZkJrX3A5XzVaX1Nua3RVeTEyS216X1A0UXkyeWxkcENVMVFTOXNuMTNrc3ZSRXVvY3pYNmR6UGljMEVXMHJNbXdvVlhDdw?oc=5" target="_blank" rel="noopener">台南房市進入盤整！房價年跌3.39% 「這區域」新建案交屋、交易量暴增300% - PChome Online 新聞</a></h3>
+              <p class="news-desc">台南房市進入盤整！房價年跌3.39% 「這區域」新建案交屋、交易量暴增300% PChome Online 新聞</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">房市進入盤整期，代表之前漫天開價的亂象沒了，現在正是買方市場！屋主讓利空間變大，您有更多好房子可以慢慢挑、慢慢砍價，千萬不要錯過這個撿便宜的黃金期。結論：房價微幅修正、屋主態度鬆動，現在就是您進場大膽議價的最好時機！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">數據已經顯示房價在跌，加上新建案大量交屋，市場供給量暴增，未來的競爭會非常慘烈。如果現在不趕快修正開價，等跌勢擴大就真的賣不掉了。結論：市場供過於求、房價已現疲態，請務必調整開價，搶先獲利了結！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">04</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-28</span><span class="kicker-sep">/</span><span class="kicker-ago">20 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE1qRjBCa2VUYW02UThzUkZkbldoME1iaFRrSjcyNWR4TzdXOHRKQnNCUVhwUWpkdElLaU41Y0pHZHFXeWZZRG5qVUhlUk11d9IBX0FVX3lxTE53X20tcWxKcFZPX3VUcW1xYUJGNXFsTjlDbUVkczZPMHV1alJtR2R6eXd0bzhic3JCSTFQQXRWYkdzZEdEMzJhT1BCczBDY29PVUQ2Nk9neTF2eWJsYld3?oc=5" target="_blank" rel="noopener">台北百億預售案大盤點！建商各顯神通hold房價 住展：亂世中的定心丸 - 富房網</a></h3>
+              <p class="news-desc">台北百億預售案大盤點！建商各顯神通hold房價 住展：亂世中的定心丸 富房網</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">百億大案陸續推出，代表建商對後市信心十足，房價根本跌不下來。現在買中古屋或新成屋，等於是用相對便宜的價格，享受未來百億建案拉抬上去的增值紅利。結論：建商高價撐盤、房市底氣十足，現在買房就是穩賺不賠的資產保值術！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">建商要「各顯神通」才能勉強撐住房價，正說明市場買氣已經到頂、買方根本不買單高價。我們個人屋主沒有建商的行銷資源，不降價根本無法吸引買方注意。結論：市場追價動能已達極限，建議適度讓利，避開與百億大案正面對決的壓力！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">05</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-28</span><span class="kicker-sep">/</span><span class="kicker-ago">1 天前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFB0ZEJQcjJYVTBIdE1IcFNwbkJ6UG1xUmNqY201VGJkb2dEd2E2NDJieU5rQXNLdTF2d1RoUUNWLWpPRzE5UFZHZnIwQzUwMnJ5ZWVFNHNGWVViWXhRbTZR?oc=5" target="_blank" rel="noopener">預售冰凍真相曝光！高雄量崩55.9％ 建商卻死守房價不退- 房市 - 工商時報</a></h3>
+              <p class="news-desc">預售冰凍真相曝光！高雄量崩55.9％ 建商卻死守房價不退- 房市 工商時報</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">姐，高雄預售屋成交量直接腰斬，這代表建商現在壓力山大，只是嘴硬不降價。這對我們買方是天大的好消息！因為這時候成屋的屋主最容易動搖，議價空間絕對是這幾年最大的一次，現在不砍價要等什麼時候？預售市場結冰，成屋屋主最好談，這週我帶您去狠狠議價，絕對劃算！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">姐，高雄預售屋成交量掉了快六成，這代表市場買氣已經徹底冷卻了。建商現在只是在死撐，但成屋市場如果也跟著拖下去，到時候想賣就得砍更深。我們不如趁現在還有零星買方時，主動修正開價，搶先獲利了結。交易量腰斬是嚴重警訊，我們降一點開價，把僅存的買方吸過來成交！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">06</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-28</span><span class="kicker-sep">/</span><span class="kicker-ago">1 天前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxOaWRoenZ4ZXBlYjU5dGJKZ1hMXzVEVE9TX0hGT0FYaF9SX1pRcndXRXpORm90ZUJfaG5OSlAxZ0VwLXBBU0xoaU96Xy1RMHJoZlV3S2ZUZmhUb3JUSG40ZW1yeDhuaUxFdkRpNTA0X3dUMF93NW00RTlYZk9HMkNUYQ?oc=5" target="_blank" rel="noopener">房市持續冷颼，為何預售屋價格沒跌？ 小心爛尾樓陷阱！專家提醒「一案建商」不碰 - 今周刊</a></h3>
+              <p class="news-desc">房市持續冷颼，為何預售屋價格沒跌？ 小心爛尾樓陷阱！專家提醒「一案建商」不碰 今周刊</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">哥，現在預售屋市場冷颼颼，而且還有一堆一案建商倒閉、爛尾樓的風險。這時候買看得見、摸得著的中古成屋最安全！不但不用怕建商跑路，還能趁現在市場冷，跟屋主好好談個漂亮價格。買預售屋不如買成屋安全，這間現成好房完全沒風險，這週就帶您去看！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">大哥，現在媒體都在報爛尾樓和一案建商風險，買方現在對房市信心差到極點，挑剔得不得了。如果我們的房子開價還高於市場行情，買方連看都不會來看。我們必須用有吸引力的價格，才能在冷風中吸引到真正想買的人。現在買方不只怕風險更怕買貴，我們主動調整價格，才能在寒冬中快速成交！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">07</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-28</span><span class="kicker-sep">/</span><span class="kicker-ago">1 天前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBsTDRNWFdIZnIzYmIwWFdTWjNaRGlNUDUxaG51d0YyRUdKVi1BMVZMRDh0MWFVXy1qellmWmZlZmtDUjNKV1JJREVPd251V0JXTldtTTNfd0p2THdaMnQyQXB6NXE4ZnpQbFlV0gFwQVVfeXFMTVkzVHZJOUJHV1dUS2ZvYXM4N3dzMm9jV01BampWZU05R2dQRU92R3ZEd3d0eUExXzItRlhvVHowZUttTGJFNkhwVnZGR2ZVTExjOWRrTDlXRjdiNFZhek5zMDBtMnNyMHBLWEpYX0x3OA?oc=5" target="_blank" rel="noopener">預售屋買氣降溫！台中、高雄交易量崩4成 剩新竹科技族撐場 - 好房網News</a></h3>
+              <p class="news-desc">預售屋買氣降溫！台中、高雄交易量崩4成 剩新竹科技族撐場 好房網News</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">姐，台中和高雄的預售交易量暴跌四成，這說明投機客已經跑光了，市場上只剩下剛需買方。沒有人跟你搶，賣方和建商急著出貨，這就是我們買方最有利的「黃金議價期」，現在不進場，等回溫就來不及了！投機客退場、賣方開始急了，現在就是這幾年最好砍價的黃金進場點！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">姐，中南部預售屋交易量直接崩了四成，這說明買方市場已經徹底冷卻，大家都在觀望。如果我們還堅持之前的多頭開價，這間房子只會越擺越舊，最後乏人問津。我們必須認清現實，調整價格來迎合現在的市場。買氣已經掉了四成，再不修正開價，真的會面臨完全沒有買方來看房的窘境！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">08</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-28</span><span class="kicker-sep">/</span><span class="kicker-ago">1 天前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE5TSTVZVTBhZjF0d3dMXzhUcUdrcUo2amRfVkhlWE95dzNQcTBxWkdnN0g2WHJ6U2dCdklPV0ctYmxmZEttUzlXY2hkRFFsdUp4MmlqQzJNRkdoWXR1Qi16UkZUcFhzR3RsZFlJ0gFwQVVfeXFMTXpOTld3ZTB1RFBtSkI5VjhjVnFFcGxaeVFlTkcxeFJYWUFaSExmYXpwa3BRVmtFR2ljS1o0Yk1KanBINjVvQjQxZHVmYnlTX1RPLWdNa0lSNVlneGFTaTRvR0RsODlBcVlHUkQ3bVM2aQ?oc=5" target="_blank" rel="noopener">全台預售屋銷量暴跌3成！台中高雄成重災區 - 好房網News</a></h3>
+              <p class="news-desc">全台預售屋銷量暴跌3成！台中高雄成重災區 好房網News</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">預售屋銷量下滑，代表建商跟投資客急了，現在就是我們掌握絕對議價權的黃金期！不用再跟別人搶，反而能挑到好物件、大膽砍價。這週末我帶您去現場，直接幫您爭取最漂亮的讓利空間！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">買氣已經明顯下滑，全台成交量縮，現在不趁行情還在高點時讓利趕快脫手，等後面賣壓湧現就真的跑不掉了。建議我們把開價調整到合理區間，這週就幫您把這間房子順利結案！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">09</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-27</span><span class="kicker-sep">/</span><span class="kicker-ago">1 天前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE00ZWlid0tSMWpxRE9NdnRRUGg5Uk8xZ3RreUVEeG82d1lpWWZnc0I0OG9XQU1BTFdVNkZwRnVmbEI5cDIxbmk0N0s3aXVCS015bzRoM0xlYw?oc=5" target="_blank" rel="noopener">臺南市3月房價指數微幅回升 房市持續盤整交易量大增逾七成 - 焦點時報</a></h3>
+              <p class="news-desc">臺南市3月房價指數微幅回升 房市持續盤整交易量大增逾七成 焦點時報</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">房市盤整就是買方最安全的進場點，價格沒大漲但交易量暴增，代表聰明的買方都默默出手了。等這波盤整結束，房價又要往上衝了。趁現在選擇還多，這禮拜趕快跟我去看房鎖定好物件！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">交易量大增是因為很多屋主看破行情、願意讓利才成交的。現在房市盤整，買方挑剔得很，如果我們的開價還堅持在高點，只會幫鄰居抬轎。建議我們立刻調整開價，趁這波熱度把房子賣個好價錢！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">10</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-27</span><span class="kicker-sep">/</span><span class="kicker-ago">1 天前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMimwNBVV95cUxQMEFhZUxNc19ZZmxMVW5aT1o4V19aVEwwMkFROF9TUXNoYW81bFdFWUJETlQ1TWpFdnhrN25wTnFxRVpldFpNS0pjZnBBTHhkeG5ZMHBEdDMwRUZZMlp6Mko3ODNMVER3OEV2c3JhUGF3OXpCRkdpQ3VYMkthVk16YkVvY3pvaU9WSHl4c3FkbDNRVmttcGVrYlhadXRhRjVrQzE1YnFOeDkzX2FTdThIdFlEVzZqV1R1aUpQUHhUQ2JfSGZTaldNZ1ZzQWoycVFfSFZfZ1ZtZWtZQ1JTVGo3R3ByZ3R0R1dOdWVqSE9rZTVNODNtRFRwZ3E2MEpYUlc0aGVVdTVWNlJOWk5ETE1UTTVvVmM2NmdiQnZIa3NMc0V1UFdfNFhIcko2dExLQVQ1cHhzcjNMZ1BTeFl4LTRIRnhEYktPdnNMZzZ0Nk5xeW0zMTVvRFZQSm81cUJBbmhmY01EMjQwRmVsT2IxNGQ5OU1vN1FaMnRhRUF4NS1FRWN2WnVodTBTeDZFNzVqazRoaHFCN09BNkZYMDQ?oc=5" target="_blank" rel="noopener">房價沒降也賣不動! 台中、高雄最淒慘 全台預售屋買氣重挫逾3成 - MSN</a></h3>
+              <p class="news-desc">房價沒降也賣不動! 台中、高雄最淒慘 全台預售屋買氣重挫逾3成 MSN</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">買氣重挫代表建商跟屋主已經快撐不住了，表面上價格沒降，私底下議價空間其實已經悄悄放寬。這正是我們進場大膽開價的絕佳時機。挑中喜歡的，我今天就幫您去跟屋主砍價！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">數據很清楚了，開高價根本沒人買單，市場已經在發出警訊。等大家都開始降價求售時，您就失去先機了。我們今天就把開價調到符合市場期待的行情，搶在對手前面把資金收回來！</div></div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section section-global_econ">
+        <header class="section-head">
+          <div class="section-numeral">III</div>
+          <div class="section-title-wrap">
+            <div class="section-eyebrow">本期共 10 則</div>
+            <h2 class="section-title">國際財經／通膨</h2>
+          </div>
+        </header>
+        <div class="section-body">
+          <article class="news-item">
+            <div class="news-num">01</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-29</span><span class="kicker-sep">/</span><span class="kicker-ago">1 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFAyZzBlajkyLWEzUGJTWmQ1STdDa0RaX2VGUlhMQ2M5LWF2WnNVZWs0cmk3X0RvaWY0R2Q0eUFtdHlUYnBHa0JUUWVMVEFjeldPbmZKRjM5eWrSAV9BVV95cUxQbmNOWDlDZHZsZnRPaFcyQW1OMHhEdzBZblF0WG1iSXZWVkRkdldXTjVnLWxOR3JMMTJVeU9YdFgwd0FleWE3b0duSFExc0QzMFhrclFpVHBZSWRIRXc0MA?oc=5" target="_blank" rel="noopener">示警亞洲經濟！聯準會官員警告「2風險」 - 三立新聞網SETN.com</a></h3>
+              <p class="news-desc">示警亞洲經濟！聯準會官員警告「2風險」 三立新聞網SETN.com</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">亞洲經濟有風險，股市波動大，這時最安全的就是把錢放進房產避風港。趁現在市場觀望、對手少，正是大膽議價的黃金時機！大哥，亂世正是撿便宜的好機會，這幾間屋主心態軟化的物件，我今天就帶您去現場看，看完立馬幫您談！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">聯準會警告經濟風險，買方信心動搖、預算縮減，再等下去可能連出價的人都沒了。趁現在市場還沒變天，趕快落袋為安才是上策。屋主大哥，景氣風向在變，我們開價實在一點，趁買方還願意看房時趕快成交，把獲利放進口袋！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">02</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">自由財經</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-29</span><span class="kicker-sep">/</span><span class="kicker-ago">1 小時前</span></div>
+              <h3 class="news-title"><a href="https://ec.ltn.com.tw/article/breakingnews/5453578" target="_blank" rel="noopener">台積電進駐後遺症？熊本縣南北差距急速擴大 日媒揭殘酷現實</a></h3>
+              <p class="news-desc">〔財經頻道／綜合報導〕台積電（TSMC）進駐日本熊本縣後，使熊本縣的「南北落差」逐漸浮現，台積電工廠周邊及熊本縣北部呈現繁榮景象，但地理上較為遙遠的熊本縣南部，由於經濟效益較薄弱，未能充分受惠。...…</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">科技大廠進駐就是房價保證！現在不趁早卡位科學園區周邊，等以後區域差距拉大，就真的買不起了。聽我的，現在看準潛力重劃區趕快進場，未來增值空間才大。這週末我帶您去看幾間園區周邊的潛力股，現在出價最划算！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">資金現在都往科技園區核心區跑，非核心區的物件吸引力正在變弱。如果我們開價不調整得更有競爭力，買方很快就被別區吸走了，真的很難賣掉。建議趁現在買方還願意看屋，我們主動讓利、趕快降價鎖定客戶！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">03</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-29</span><span class="kicker-sep">/</span><span class="kicker-ago">1 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMizAJBVV95cUxOd01uZEZBN0o2UE5OTENvdGJQbnVPSlIza2pOUnBqVkFlU0VtVUlvU3RqS2lrS3ZMeFRvQlhwa1oxVUdLYVJHZlprNC1KVkV1X1RkUFhBMUhOUFkwTXExWjQyVkRCU1BCbHJraWtlTnhkWGJJek92UllTZ0dOTWpqaHpkUUM0ZUZLVTNJQ2lTeUc3bmVaZGlwMWc2b1dOT0dCWUU4VEpkUWhGTnlQVzhIQzYyQTg3MGVQczZfV011WTh4VEtjZmJGdUJ2aFN1THlqTzB5RzNDUHppNXpaWG83ZGZPRmRsdkdlOEJWMG9UMy1XMndkNWVEcE1YcVZDREIxYnFwTDlrZEY4Z2Q3ZWVTNnV1RkJzcVo1NkoyU1pKendYOVNleFZla25lbjc5YXBVM1dBakVQZGNJZW1JLTJ2Yk5zQmpwQlpUWUN3QQ?oc=5" target="_blank" rel="noopener">美通膨關鍵指標惡化 民眾實質收入連三月縮水 - Yahoo股市</a></h3>
+              <p class="news-desc">美通膨關鍵指標惡化 民眾實質收入連三月縮水 Yahoo股市</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">通膨怪獸一直在吃掉你的存款，錢放銀行只會越來越薄。買房是唯一能對抗通膨的工具，用明天的增值來打敗今天的通膨，現在就是把定存換成黃金地段房產的最佳時機。走，這週末跟我一起去看幾間抗通膨神案！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">買方的實質購買力已經連續下滑，大家的預算都在縮水，根本無力負擔過高的房價。如果我們還堅持高開價，只會把誠意買方推給對手，最後白白幫別人抬轎。建議我們適度讓利，趁現在市場還有買氣時趕快獲利了結！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">04</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-29</span><span class="kicker-sep">/</span><span class="kicker-ago">1 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSzdBR2dtbTVQRTdveUxuWmFVTXVtdUtLRnZVeml3d3FCeEFFaVNzNTJuZ0RKMXFGWDVMSXFaMVV2RlprRGFxaDlQS3BNb2NyNXBGYkI2b2pEalhlVnJjT3FMTms0WG9sdDhuWkFxSVhUcTRQVnNheXFvQXFFdGxQQl92b3NScWFr?oc=5" target="_blank" rel="noopener">傳台積電連調3奈米售價蘋果MacBook Neo恐變相漲價百美元美股US Stocks Quote - 外圍新聞內容Golbal News Content - AASTOCKS.com</a></h3>
+              <p class="news-desc">傳台積電連調3奈米售價蘋果MacBook Neo恐變相漲價百美元美股US Stocks Quote - 外圍新聞內容Golbal News Content AASTOCKS.com</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">台積電連晶片都漲價，代表通膨巨獸根本停不下來，連帶萬物皆漲！這時候把現金存在銀行只會被通膨吃掉，不如換成最抗通膨的黃金地段房產，資產才能跟著護國神山一起增值。結論：現在買房就是跟著台積電一起抗通膨，趕快挑一間好房鎖定資產價值！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">科技巨頭調漲售價，消費者生活成本變高，買方的購屋預算勢必會被嚴重壓縮，接下來看屋的人會更挑剔、出價更保守。建議我們趁現在買方還能負擔時，適度讓利趕快獲利了結。結論：買方預算變緊了，我們開價稍微調整一下，才能在市場變冷前順利成交！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">05</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-29</span><span class="kicker-sep">/</span><span class="kicker-ago">2 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE9ibjBKU0ZBOHhjSGctNFltM2lvQ2lfT0V5UjJ3Mkl0M3QyVFNYMk5jWUlocFkwYlBDeHY4T2Ixc3FOUWhyLVktUnhEeHoyWHRq0gFWQVVfeXFMT1BqZlFLUjdzVHJHcXBqaHplWEZlWHUtdF9SbHptX0oxdll5X0NmQjRwV3Q1aXZucWwzR0lnMXZNMWFici1QNmt6TGctZVJzNVZsTGpWd1E?oc=5" target="_blank" rel="noopener">從亞洲金融風暴到QE輸出通膨 陳冲：強權重演金融收割術 - udn.com</a></h3>
+              <p class="news-desc">從亞洲金融風暴到QE輸出通膨 陳冲：強權重演金融收割術 udn.com</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">美國大撒幣輸出通膨，手上的現金只會越來越薄，唯有磚頭才是對抗強權收割的終極武器。現在不把貨幣換成資產，資產縮水就來不及了。大哥，與其看著存款被通膨吃掉，不如今天就定案這間，用房產鎖住你的資產價值！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">全球金融收割代表資金要變緊了，買方房貸越來越難貸，購買力正在快速下滑，再不賣後面就更難找人接手了。大哥，買方的預算已經被限貸和通膨壓扁了，我們讓點利，今天就成交落袋為安！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">06</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-29</span><span class="kicker-sep">/</span><span class="kicker-ago">2 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1YSkEwSGYtcmJIRWZZZG5hN0JJMnJmSWJveXY1N1V0eUR1Um1WcGtpRjlNaU5NMlh5elZlNEhYQXVkWUNOVmZ0bE5JMmZFN29tUjBQZEJObUcwUQ?oc=5" target="_blank" rel="noopener">黃金交叉！Anthropic市值狂飆至9650億美元 首度超車OpenAI - 科技島</a></h3>
+              <p class="news-desc">黃金交叉！Anthropic市值狂飆至9650億美元 首度超車OpenAI 科技島</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">AI巨頭市值不斷創紀錄，台灣作為AI供應鏈核心，未來的科技財富效應只會更驚人，房價根本沒有跌的空間。現在進場就是搭上AI暴富的順風車。大哥，科技業資金遲早會溢注到房市，趁現在房價還沒被科技新貴炒高，我們趕快卡位！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">現在資金全被AI股市吸走了，買房的資金變少，買方變得極度挑剔，開價太高根本沒人理。我們必須定出一個有吸引力的價格才能把資金吸回來。大哥，現在買方資金都在股市，我們把開價調得更有競爭力，才能快速變現！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">07</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-29</span><span class="kicker-sep">/</span><span class="kicker-ago">2 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE5yQldiQW9jT0d2dVVhNlZQeXBuRHdCSVhDckQ1RFhJaDIxYjFjZGdzenFhRDNjT2lybFdkdlZ4YW5OcXRPbE40eXFTR25kVXVjOE5PaElaWQ?oc=5" target="_blank" rel="noopener">美伊緊張升溫 埃及有望吸金須先克服通膨貨幣問題 - rti.org.tw</a></h3>
+              <p class="news-desc">美伊緊張升溫 埃及有望吸金須先克服通膨貨幣問題 rti.org.tw</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">國際局勢動盪不安，資金都在尋找安全避風港。台灣經濟基本面強勁，房地產更是本地資金最信賴的防空洞，現在進場正是鎖定資產價值的最好時機。國際局勢越亂，台灣房地產越是資金避風港，這間好房不等人，快趁現在進場卡位！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">國外通膨和貨幣問題嚴重，全球金融市場動盪，這會讓國內買方出價變得極度保守，高開價的物件只會被邊緣化。現在買方怕通膨和局勢不穩都在觀望，開價太硬根本沒人看，稍微讓利才能在資金退潮前順利套現！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">08</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-29</span><span class="kicker-sep">/</span><span class="kicker-ago">3 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMinwNBVV95cUxQQ3J3WVpFUXlSZlI4Ykt6bVFWQmRYOG84SmJ2cUVqZFROUHZXaUFSaGFxb1Y4Z18yTk5iYXVERVVGX29Tc3lZQ0k5NHA1S1V3THdUYW16bXlTWmxkOGVFbWoweER6WWJRQlV1YlVDMjNxalU0X0ptR25JNnlsZ0ZobllETjU5ZFJOUnR4MkhCQVVZZEo5R3BIZjN4M1YwNW11WHpFNlAyYWhiMVZYMkhXMmZ3aHVOdFZOeWlOa2Q1VXNSbVF1RUx3Mjl6MnpjcjNDOEZodXJKYktEY29lRlhleGZ0TDh3U0ZiZFp2OUlYa3Jjd0FEaHZMRWhmeDF6NVhCU1VIOFBYWXZvZUs4N3dlZGhXUWc5Z1g0QnItRlJ0aFZJMkd2YXNNcWJVMlI5bGlFX0VuVzJpSDlUb3RnenhtRlJBdHRoRWhzV2NYLUFvRFk0SndXQ2pTSnJXbHRiT0hKZWhRUzhCXzYwV1l3RTBNeTFSUVNuemZRaUJPdElhblJMQUo4bER6czB4TmprY3VMSGQ1LVVYT1F2ajNxRHdJ?oc=5" target="_blank" rel="noopener">【美洲速報】中東戰事推升通膨 Fed主席華許面臨內外雙重壓力｜#鏡新聞 - Yahoo新聞</a></h3>
+              <p class="news-desc">【美洲速報】中東戰事推升通膨 Fed主席華許面臨內外雙重壓力｜#鏡新聞 Yahoo新聞</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">通膨壓力逼得各國央行頭痛，這說明錢真的越來越薄了。唯有實體不動產能跟著通膨一起增值，現在買房才是對抗貨幣貶值的唯一出路。通膨壓力停不下來，現金只會越變越薄，把錢換成這間抗通膨神房才是最聰明的決定，我們趕快出價！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">通膨和升息壓力讓買方的實質購買力嚴重縮水，他們能負擔的總價上限已經降低，我們如果不調整開價，根本等不到買方來接手。買方的荷包被通膨和房貸利息壓扁了，再堅持高價只會乏人問津，我們趕快降價迎合買方預算吧！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">09</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-29</span><span class="kicker-sep">/</span><span class="kicker-ago">3 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE8yYTY0TzgxeGJBUHN3R2ZUSzVRUTRPMTJUajBnQUhVcjZvU0NnLTNva3lHS29EUnpleFUxQ0VIMVFETUpxenFiTFJmZUN4QTDSAVRBVV95cUxOUFRYcE9OQ3YyT29VOUg0UkhUVVFaM3ZscGhGY2hRUXcya09yYzY5RE1MdXlHMWNXQjIxLXo0eUZaMFlUUEM1T011RGlLSjd2UmF0Vkg?oc=5" target="_blank" rel="noopener">前芝加哥聯儲行長揭「人民幣國際化機遇」！示警美國通膨將比預期持久 | 財經 | CTWANT - CTWANT</a></h3>
+              <p class="news-desc">前芝加哥聯儲行長揭「人民幣國際化機遇」！示警美國通膨將比預期持久 | 財經 | CTWANT CTWANT</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">美國通膨停不下來，手上的現金只會越來越薄。現在把錢放在銀行就是縮水，唯有買房置產才能真正抗通膨、鎖住資產價值。這時候進場最聰明，快跟我約看房，把貶值的現金換成保值的黃金屋！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">通膨居高不下，買方的房貸壓力和生活成本大增，出價意願已經明顯下滑。現在不稍微讓利趕快獲利了結，等買方徹底縮手就來不及了。建議我們把開價調整到合理區間，這週就幫您促成交易！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">10</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-29</span><span class="kicker-sep">/</span><span class="kicker-ago">3 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9EQUhVWllBMkZ6VmltZ05MQUJWejdtd01hN1Vld3ZITUhTbGY1a3c5bXNKcVJZOXhDalcyelNpRE5NRlplSWhqOXhFMlhvNWM3NUZ5TWJMTWFCUdIBbEFVX3lxTE5tTGpURlZROEFYMnpVclh4QzVKUExwSnNDc1Vkc2t4WkVzTTJSM1BJM0NmWDZrZlpkamFBX2NUdW5sYVRRekFlenNDZlhOWlRvWHMzaXpPSHpyR3FpWFdaLWU1S2UxVkYxZzJOWA?oc=5" target="_blank" rel="noopener">板橋黃石市場抗通膨美食！古早味蘿蔔糕＋糯米腸只要50元 - travel.ettoday.net</a></h3>
+              <p class="news-desc">板橋黃石市場抗通膨美食！古早味蘿蔔糕＋糯米腸只要50元 travel.ettoday.net</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">連銅板美食都在打抗通膨，可見通膨壓力已經深入生活，唯有買房才能真正保值。板橋黃石市場生活機能這麼強，周邊房市抗跌又保值。現在讓您的資產跟著地段一起升值，快跟我約這週末看房吧！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">大家都在找便宜的抗通膨美食，代表買方的荷包真的縮水了，對房價的敏感度變得極高。現在如果開價還高於行情，買方連看都不會來看。我們趕快把開價調整到親民的甜蜜點，才能在眾多待售物件中脫穎而出！</div></div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section section-geopolitics">
+        <header class="section-head">
+          <div class="section-numeral">IV</div>
+          <div class="section-title-wrap">
+            <div class="section-eyebrow">本期共 10 則</div>
+            <h2 class="section-title">地緣政治／戰爭</h2>
+          </div>
+        </header>
+        <div class="section-body">
+          <article class="news-item">
+            <div class="news-num">01</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-29</span><span class="kicker-sep">/</span><span class="kicker-ago">0 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMizANBVV95cUxOQWZmTkRxTElRSTRkOThtR3o5aU0zQmQ4ZG9pcFVGV2NXMFU1UmRhRUhZanY5V2xCd2hGQ1Rxb3RmU1FlcmdRamdzYjBodWN3NV90bU9TNTR6SklQd3RCWlotM2g0Z3UwSy0yVEVhRWRHQWFzRXdtSmlDLTdWamRIcGxwWFQyaUtjMFJEZ2NFVjdheFh4a0g1b0dVRnBvcmJDd3owai1oTkRtRGZlLUhtbFBpVDJkRUhyYXhpVHpHODhSM2Y2eldxOUhYeUNUZDIxTkstanYwM0VadGtfbmtMcFlXQmlVUXVrNHItU0FjSzY2UVVoeVMtcmVib2QxRVJjVlptU3BCTkx0dng3ekdpakhLVzZYLVdaWVFDZDNsOE9nSzFZN2RiTEZsY0pzaHlaWnhPeHpUNWlXUGhIUUQwZ1NpOWlwcVZaVUI4bEdWcGl1VWhicUpJYnpLdmNYVmJoZk5seE1vNm5EX0NWVzNRUUZqUFpXYkJCckNLNlJhMnBmLTRYVjFZUkE1YmgtVUFSZC12dXRiTDRRV09TalRwUUZtLWl0WVRTRzI5N0ZlajB1ajFaQlRSb1JGVGFsdFFXWUwxZHViV2ZsQ1Jp?oc=5" target="_blank" rel="noopener">副總統范斯表示川普尚未簽署協議 美國制裁伊朗相關8艘油輪與逾15家公司 - Yahoo新聞</a></h3>
+              <p class="news-desc">副總統范斯表示川普尚未簽署協議 美國制裁伊朗相關8艘油輪與逾15家公司 Yahoo新聞</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">國際局勢緊張，資金放股市提心吊膽，不如轉進房地產避險。現在進場正是用實體磚頭鎖住價值的最好機會。大哥，亂世買黃金不如買地段，這週空出來，我帶您看幾間最保值的抗通膨好房！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">國際制裁讓買方轉為觀望，大家現在都想留現金，買氣明顯縮手。如果不趁現在稍微讓利，等市場更冷就更難賣了。屋主大哥，現在市場現金為王，我們開價調整一下，先把誠意買方抓牢落袋為安！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">02</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">自由財經</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-29</span><span class="kicker-sep">/</span><span class="kicker-ago">0 小時前</span></div>
+              <h3 class="news-title"><a href="https://ec.ltn.com.tw/article/breakingnews/5453778" target="_blank" rel="noopener">華泰股東會通過配息1元 今年營運成長</a></h3>
+              <p class="news-desc">封測廠華泰（2329）今日召開股東常會，通過承認去年度財報及盈餘配發等案，每股配發現金股利1元；公司看好今年整體訂單能見度，營運可望延續成長動能。 面對去美國新關稅政...…</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">科技業營運看好，新貴們的熱錢又要湧入房市了！趁這波買盤還沒把房價推高前趕快卡位，才能買在起漲點。大哥，科技業資金行情正要發酵，這幾間潛力物件我先幫您留著，這週末趕緊來看房！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">雖然科技業配息，但面對新關稅壓力，買方越來越理智，不會盲目追高。現在肯出價的買方很珍貴，開價太高只會幫人抬轎。屋主大哥，我們趁熱度還在稍微調整開價，才能吸引真正有實力的買方快速成交！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">03</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">自由財經</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-29</span><span class="kicker-sep">/</span><span class="kicker-ago">1 小時前</span></div>
+              <h3 class="news-title"><a href="https://ec.ltn.com.tw/article/breakingnews/5453691" target="_blank" rel="noopener">政府保證2034年前不缺電 黃仁勳回這句現場尷尬沉默</a></h3>
+              <p class="news-desc">輝達執行長黃仁勳昨（28日）晚間宴請台灣重要供應鏈夥伴，會後受訪時，有媒體詢問政府喊出2034年前不缺電的保證，他僅以一句「Maybe（也許）」，讓現場一度沉默，也引發網友討論。...…</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">黃仁勳對電力語帶保留，這代表未來科學園區周邊、電力保障優先的精華區地段會變得更稀缺、更保值。現在不趁早卡位精華地段，等以後科技大廠搶光，房價就更回不去了。 「大哥，精華區電網最穩、最抗跌，這間地段極佳的物件我幫您約今天下午看房，先卡位先贏！」</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">連黃仁勳都對台灣電力有疑慮，這會讓很多科技新貴和買方轉為觀望，原本炒高的科技概念房市可能面臨降溫。趁現在買方還沒縮手，趕快獲利了結才是上策。 「屋主大哥，現在買方信心開始動搖，我們趁這波高點趕快讓利一點成交，把獲利放進口袋最安全！」</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">04</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-29</span><span class="kicker-sep">/</span><span class="kicker-ago">1 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMijANBVV95cUxPU1FsM1VTbGp5X05QTFRIdnUwNXEyZTZtbkNEYXVXaDVsTDhHazdtTy1TM2tvTllESmlLODUxNFZvOFAwa1RpNGhfT1VOZ3k0NEMtVDR6MGlDOG05RDZHTU9VZUJidHFmd1dwb2hEUWhIMHVHbWhWdkRRZGlqcU9LNDhoTzVNdG9nT0dSOFZoR0hlclBZZ1lfR3FKakhtbU5vclkzRXpWTGV2MDJ4b29fOGh0RmtLVnU4UHl1cUQ0aktCWHM3bHhzeHlDMjBUSXY0NUtqakt6SW5iMzR2UGdhcXVHMFRMNVNnOUcwalFQM3BNbTJhRmROZWJTWkFiU1E1cklNOG9pYzgyRDhMLWtSLXNtMWl1bzZfZkFMbThzakhFR1U3TlhoRE1KNmRhMDhHUzktVm9BVU5nX3ItR25Hcy1zR2o5RmxGUmtaUHBoc05Gb3NPZ2p1MUg4LV9TeV94OWtTTDZ0bkFIcTV3WXlCSUMwUUdnQWRPRlV0cFMyTnVVZVpkeFFlSFZUYWw?oc=5" target="_blank" rel="noopener">旺旺保股東會》險被川普關稅害到！1招解套 稅後賺逾10億元 - Yahoo股市</a></h3>
+              <p class="news-desc">旺旺保股東會》險被川普關稅害到！1招解套 稅後賺逾10億元 Yahoo股市</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">國際貿易戰風暴說來就來，股票基金隨時可能大震盪，還是買實體房產最保險。錢放在銀行會變薄，換成看得到摸得到的磚頭，才是亂世中穩賺不賠的避風港。這週末我帶您去看幾間保值性極佳的好物件，早買早安心！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">國際局勢變化太快，買方現在對大筆支出非常保守，大家都想把現金留在身上，不願意在高點接盤。現在不趕快讓利落袋為安，等下半年景氣一波動，想賣就真的找不到人接手了，我們今天就把開價調降，搶先成交吧！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">05</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-29</span><span class="kicker-sep">/</span><span class="kicker-ago">1 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMiuAJBVV95cUxQYkFXLWR3b1FybDdJTVF0MDB2cm1CZS1CdGxaRVJtUm55aGs2c1Z1aWwxX19INlBESmwwVG1uMGgyRW01eHdBaEVjVHZXY29BdjcyeFNBMHp5dzl6aFlfa2R2X1VocFl0TUhpT3F6WTFxdFNad1J3OHd3RmltTEotWVhtNVVPR0loOV92ZGxvUGJidlg1RlhESFIwRzdJUnUyT2dHVGtnSGFpaDhDUWlsRTVQN2hHUjM4Y1ZsRmlrdm11UFlrb3ZySUtOOTNLa18wYXdUaHN6WkNRWU5Oblc4OHdZVVFmQ1BWTGF1VVdJelBxeU84MDQ0VllwUzUwczBMTTJsOTVfOWRDcjU1d0UzY0QteVEtQzg2X3FoZGg5YjJzY0JzUEdWV3lOX0R6bnFuS1RuZWJvN3c?oc=5" target="_blank" rel="noopener">兩岸與國防議題仍居核心 藍綠攻防持續升高 - Yahoo新聞</a></h3>
+              <p class="news-desc">兩岸與國防議題仍居核心 藍綠攻防持續升高 Yahoo新聞</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">政治局勢緊張的時候，正是內行人的「危機入市」良機！這時候屋主心態最容易動搖，我們的議價空間最大。趁現在挑好物件、勇敢出價，絕對能買到平常根本買不到的甜甜價。今天就挑兩間，我幫您去跟屋主狠狠砍價！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">兩岸局勢緊繃，很多資產客和買方都開始轉為觀望，不願意在這種敏感時刻冒險。現在落袋為安、現金為王才是最安全的策略，再撐下去只會流失更多買方。建議我們主動調整開價，吸引想撿便宜的買方，趕快落袋為安！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">06</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-29</span><span class="kicker-sep">/</span><span class="kicker-ago">2 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE85MTFiVG1mYzZMZFo1bE53YWtkMzloU1dWQXA1aUNTdDlDMDg4bEtXQmxiS1BSdTQtSV9YTDNvTGh3a2dDTHBMaExLRjNkZUtyaXc?oc=5" target="_blank" rel="noopener">美伊關係十字路口：邁向和平，還是重返戰爭邊緣？ - 蕃新聞</a></h3>
+              <p class="news-desc">美伊關係十字路口：邁向和平，還是重返戰爭邊緣？ 蕃新聞</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">國際局勢動盪，反而會加速海外台商資金回流台灣避險，房地產就是這些避險資金最安全的避風港！現在進場買房，剛好能搭上這波資金回流的資產增值列車。結論：國際越亂、房產越穩，現在就是把資金換成安全房產的最佳時機！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">中東局勢一有風吹草動，買方就會縮手想「現金為王」，不願意把資金卡在房地產上，市場買氣隨時會降溫。我們不能再堅持高價，必須在買方完全縮手前，用合理的價格吸引他們。結論：局勢隨時會變，我們主動讓利一點，落袋為安才是最聰明的選擇！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">07</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-29</span><span class="kicker-sep">/</span><span class="kicker-ago">2 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFBpRHZ5NXlld29nNXBnTVI4MHoxLW5wQV9mNTcwRHJOdkpjX1ptLUdDX043YmJzQVA5YUV5T2dJakR6WmtGcHRxMzZOcEtfSFdDV1hEcXd6MFV1ZEQ1T0c1Q3p3djJLcXM5VF9JTw?oc=5" target="_blank" rel="noopener">美以伊戰爭｜美媒報道美伊已達成諒解備忘錄 伊朗稱協議文件尚未最終確定 - Now 新聞</a></h3>
+              <p class="news-desc">美以伊戰爭｜美媒報道美伊已達成諒解備忘錄 伊朗稱協議文件尚未最終確定 Now 新聞</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">國際局勢稍微緩和，正是市場恐慌情緒消退、房市準備起飛的黃金空窗期！趁現在其他買方還在觀望，我們先一步進場卡位，才能用最漂亮的價格買到心儀的房子。結論：趁現在局勢短暫回穩、對手還在猶豫，我們今天就趕快去下斡旋！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">國際協議隨時可能生變，這種不確定性讓買方根本不敢追高，大家都怕買在山頂。趁現在局勢還算平靜，我們趕快把價格調整到合理範圍，在下一次衝突爆發前獲利了結。結論：局勢隨時會再變，趁現在市場還算穩定，我們降價一點趕快賣掉落袋為安！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">08</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-29</span><span class="kicker-sep">/</span><span class="kicker-ago">2 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQUThlX3hYdGhkRWdpSnpMSGpDSnRwVEVackJEUTQ4Njl6VHB5clE1MENIZnlpQ184VnV5SE1QZTRjeGV4ZzRMSUU2Y1A3WnF2NEZla2ltUm1XejdiV3FIcFhnMnItSG9YdjNZeTRxeFozN0tQYm5ZcHVpQ1k1V0FXQ29KOGdpVEhhQUNKZW96UUxXSU1NZl9B?oc=5" target="_blank" rel="noopener">川普揚言課徵半導體232關稅 鄭麗君：台美協商免稅配額與豁免清單 - DIGITIMES</a></h3>
+              <p class="news-desc">川普揚言課徵半導體232關稅 鄭麗君：台美協商免稅配額與豁免清單 DIGITIMES</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">關稅戰開打反而會加速台商資金回流，加上政府積極爭取豁免，台灣科技業實力根本不用擔心。現在正是趁市場觀望、屋主好談時進場卡位，把資金鎖定在最抗通膨的精華區不動產。大哥，趁現在大家還在觀望，我們先去出個價，絕對能談到好價錢！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">關稅戰一來，科技新貴的分紅和買房信心肯定受影響，接下來買方出價只會越來越保守。與其等後面市場變冷、選擇變多，不如現在稍微讓利落袋為安。大哥，現在買方縮手了，我們把開價調到合理區間，先搶下這組誠意買方！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">09</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">G News</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-29</span><span class="kicker-sep">/</span><span class="kicker-ago">2 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFAxRV9EOGxPNlJkcjBqVWNhNlJ1UTR3ekVoQ2hBdF9TSGV4ZVRoaWRsR3pxSjhUa1lYZ3B3S0w4Z0g2ZmQtd1VvNWdjUWFDTkFKdjZfcEVDVEhQQjFuTjNr?oc=5" target="_blank" rel="noopener">美財長宣布限制伊朗航班起降加壓促開荷莫茲海峽| 國際 - 中央社 CNA</a></h3>
+              <p class="news-desc">美財長宣布限制伊朗航班起降加壓促開荷莫茲海峽| 國際 中央社 CNA</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">國際局勢緊張、運費又要漲，這代表新一波通膨又要來了，錢放在銀行只會被通膨吃掉，買實體黃金不如買磚頭保值。現在買房就是最好的避險避風港。大哥，通膨怪獸又要來了，把現金換成不動產最保值，這間我們趕快約看！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">國際地緣政治緊張，買方現在都想把現金留在身邊，看房的人變少、出價也變保守了。如果我們開價還硬撐著，只會幫別人物件作嫁。大哥，現在局勢亂，買方只看高CP值的房子，我們稍微降個價把客戶吸過來！</div></div>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-num">10</div>
+            <div class="news-content">
+              <div class="news-kicker"><span class="kicker-source">自由國際</span><span class="kicker-sep">/</span><span class="kicker-date">2026-05-29</span><span class="kicker-sep">/</span><span class="kicker-ago">2 小時前</span></div>
+              <h3 class="news-title"><a href="https://news.ltn.com.tw/news/world/breakingnews/5453471" target="_blank" rel="noopener">伊朗挺阿曼槓華府！川普嗆轟炸 阿曼大使急切割：無意徵收通行費</a></h3>
+              <p class="news-desc">美國總統川普近日警告，一旦盟友阿曼與伊朗合作、在荷姆茲海峽（Strait of Hormuz）徵收通行費，將遭受美軍轟炸。對此阿曼駐美大使28日向美方強調，無意在該水道徵收通行費...…</p>
+            <div class="perspectives">
+              <button type="button" class="btn-buyer" onclick="togglePerspective(this)"><span class="dot"></span>買方觀點</button>
+              <button type="button" class="btn-seller" onclick="togglePerspective(this)"><span class="dot"></span>賣方觀點</button>
+            </div>
+            <div class="perspective-content buyer" hidden><div class="perspective-label">給買方</div><div class="perspective-body">中東局勢一有風吹草動，市場就會出現短暫的恐慌性讓利，這就是老手最愛的危機入市黃金期。等局勢穩了，價格又回不去了。大哥，趁現在地緣政治動盪、屋主心慌慌，我們趕緊進場大膽議價，機會不等人的！</div></div>
+            <div class="perspective-content seller" hidden><div class="perspective-label">給賣方</div><div class="perspective-body">國際戰爭陰影讓買方心驚驚，大家都抱著現金在觀望，沒人想當冤大頭。我們的開價如果不調整，在這種緊繃氣氛下根本不會有人來看。大哥，現在市場氣氛緊繃，我們稍微讓一點，先吸引買方出面談才是上策！</div></div>
+            </div>
+          </article>
+        </div>
+      </section>
+    <footer class="colophon">
+      <div class="colophon-mark">磐石週報 · ROCK WEEKLY</div>
+      生成時間：2026/5/29 下午12:44:28<br>
+      來源：G News、自由財經、自由國際<br>
+      由 SKY AGENT「開會新聞」Skill 自動產製　／　資料僅供內部參考，實際數據請以官方公告為準
+    </footer>
+  </div>
+  <script>
+    function togglePerspective(btn) {
+      var item = btn.closest('.news-item');
+      var type = btn.classList.contains('btn-buyer') ? 'buyer' : 'seller';
+      var content = item.querySelector('.perspective-content.' + type);
+      if (!content) return;
+      content.hidden = !content.hidden;
+      btn.classList.toggle('active', !content.hidden);
+    }
+  </script>
+</body>
+</html>
